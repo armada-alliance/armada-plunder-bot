@@ -15,7 +15,7 @@ TOKEN = os.getenv('DISCORD_TOKEN')
 GUILD = os.getenv('DISCORD_GUILD')
 
 # Get our block frost api key from the file .env
-api_key = os.getenv('WAEL_BLOCKFROST_API_KEY')
+api_key = os.getenv('BLOCKFROST_API_KEY')
 
 from blockfrost import BlockFrostApi, ApiError, ApiUrls
 
@@ -30,7 +30,7 @@ api = BlockFrostApi(
 # Get our github api key from the file .env
 # Then check login to github
 
-personal_access_token = os.getenv('BLOCKFROST_PERSONAL_TOKEN')
+personal_access_token = os.getenv('GITHUB_PERSONAL_TOKEN')
 # using an access token
 g = Github(personal_access_token)
 
